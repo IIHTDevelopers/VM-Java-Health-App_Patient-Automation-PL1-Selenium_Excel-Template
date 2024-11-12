@@ -7,6 +7,59 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class patient_Pages extends StartupPage {
+	
+	//Locators of L1 Scenarios
+		//login locators
+		By usernameTextfield = By.id(" ");
+		By usernameTextbox = By.xpath(" ");
+		By passwordTextbox = By.xpath(" ");
+		By signInButton = By.xpath(" ");
+
+		By patientModuleByElement = By.xpath(" ");
+
+		By patientModuleToggleIconByElement = By.xpath(" ");
+		By searchPatientSubModuleByElement = By.xpath(" ");
+		By registerPatientSubModuleByElement = By.xpath(" ");
+
+		By searchPatientTextboxByElement = By.xpath(" ");
+
+		By cameraIconByElement = By.xpath(" ");
+		By newPhotoButtonByElement = By.xpath(" ");
+		By takeASnapShotButtonByElement = By.xpath(" ");
+		By cancelButtonByElement = By.xpath(" ");
+
+		By basicInformationLinkByElement = By.xpath(" ");
+		By regPatientSubmitButtonByElement = By.xpath(" ");
+		By errorMessageOfPhoneNumberTextboxByElement = By.xpath(" ");
+
+		By firstNameTextboxByElement = By.xpath(" ");
+		By middleNameTextboxByElement = By.xpath(" ");
+		By lastNameTextboxByElement = By.xpath(" ");
+		By ageTextboxByElement = By.xpath(" ");
+		By phoneTextboxByElement = By.xpath("  ");
+
+		By bloodGroupDropdownByElement = By.xpath(" ");
+
+		By guarantorLinkByElement = By.xpath(" ");
+		By maleRadioButtonByElement = By.xpath(" ");
+		By feMaleRadioButtonByElement = By.xpath(" ");
+
+		By selfCheckboxByElement = By.xpath(" ");
+		By notificationPopupMessageElement = By.xpath(" ");
+		By statusNotificationMessageByElement = By.xpath(" ");
+		By mainNotificationMessageByElement = By.xpath(" ");
+
+		By kinEmergencyContactLinkByElement = By.xpath(" ");
+		By commentsTextboxByElement = By.xpath(" ");
+
+		By alexAlexaTextNameByElement = By.xpath(" ");
+		By printButtonByElement = By.xpath(" ");
+		By lastButtonByElement = By.xpath(" ");
+
+		By vaccinationModuleByElement = By.xpath(" ");
+		By vaccinationModulesToggleIconByElement = By.xpath(" ");
+		By patientListSubModuleByElement = By.xpath(" ");
+		By titleNameOfVaccinationPatientRegisterFormByElement = By.xpath(" ");
 
 	
 
