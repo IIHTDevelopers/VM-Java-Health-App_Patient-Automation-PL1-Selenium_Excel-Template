@@ -229,37 +229,4 @@ public class patient_Pages extends StartupPage {
 		return null;
 	}
 
-	/**@Test13
-	 * about this method verifyTextIsPresentUsingHardAssert() 
-	 * @param : null
-	 * @description : 
-	 * @return : String
-	 * @author : YAKSHA
-	 */
-	public String verifyTextIsPresentUsingHardAssert(Map<String, String> expectedData) throws Exception {
-
-		return null;	
-	}
-
-	/**@Test14
-	 * about this method getDataFromTable() 
-	 * @param : null
-	 * @description : it will fetch the data from the table
-	 * @return : Boolean
-	 * @author : YAKSHA
-	 */
-	public String getDataFromTable() throws Exception {
-		return null;
-	}
-
-	/**@Test15
-	 * about this method performKeyboardOperation() 
-	 * @param : 
-	 * @description : perform the keyboard operation
-	 * @return : String
-	 * @author : YAKSHA
-	 */
-	public String performKeyboardOperation() throws Exception {
-		return null;
-	}
 }
