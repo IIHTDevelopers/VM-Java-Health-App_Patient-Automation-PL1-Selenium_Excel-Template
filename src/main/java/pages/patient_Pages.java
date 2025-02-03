@@ -69,7 +69,7 @@ public class patient_Pages extends StartupPage {
 		super(driver);
 	}
 
-	/**@Test1
+	/**@Test1.1
 	 * about this method loginTohealthAppByGivenValidCredetial() 
 	 * @param : Map<String, String>
 	 * @description : fill usernameTextbox & passwordTextbox and click on sign in button
@@ -106,7 +106,7 @@ public class patient_Pages extends StartupPage {
 	/**@Test2
 	 * about this method verifyAllPresenceOfFieldIfPatientModuleIsPresent() 
 	 * @param : null
-	 * @description : 
+	 * @description : "Verify that Patient module is present or not ?"
 	 * @return : Boolean
 	 * @author : YAKSHA
 	 */
@@ -117,7 +117,9 @@ public class patient_Pages extends StartupPage {
 	/**@Test3
 	 * about this method verifyPlaceholderNameOfTexbox() 
 	 * @param : null
-	 * @description : verify the placeholder name of text box 
+	 * @description : "On the "Patient" Module's "Search Patient" page
+	 * verify & clicking on the "Search (Minimum 3 Character)" textbox.
+	 * "and get the Placeholder name of "Search (Minimum 3 Character)" textbox. 
 	 * @return : String
 	 * @author : YAKSHA
 	 */
@@ -128,7 +130,11 @@ public class patient_Pages extends StartupPage {
 	/**@Test4
 	 * about this method verifyButtonIsPresent() 
 	 * @param : null
-	 * @description : 
+	 * @description :"On the "Patient" Module's"
+			+ "clicking on "Register Patient" sub module"
+			+ "and verify that the "+ New Photo" button is present or not ?"
+			+ "After validation of "+ New Photo" button,"
+			+ "then click on it, Then verify \"Take A Snapshot\" button is present or not?") 
 	 * @return : Boolean
 	 * @author : YAKSHA
 	 */
@@ -163,7 +169,9 @@ public class patient_Pages extends StartupPage {
 	/**@Test7
 	 * about this method scrollToBottomAndVerifyFieldIsPresent() 
 	 * @param : null
-	 * @description : 
+	 * @description : "On the \"Basic Information\" form of \"Register Patient\" sub module, 
+	 * "scroll to the bottom of the \"Basic Information\" form.
+	 * Then verify the \"Blood Group\" Dropdown is present or not?"
 	 * @return : String
 	 * @author : YAKSHA
 	 */
@@ -174,59 +182,15 @@ public class patient_Pages extends StartupPage {
 	/**@Test8
 	 * about this method scrollToBottomVerifyFieldAndHighlight() 
 	 * @param : null
-	 * @description : 
+	 * @description : "On the bottom of the \"Basic Information" form
+			+ "of "Register Patient" sub module,"
+			+ "If "Blood Group" Dropdown is present"
+			+ "then highlight the "Blood Group" Dropdown"
 	 * @return : Boolean
 	 * @author : YAKSHA
 	 */
 	public Boolean highlightTheElement() throws Exception {
 		return false;
-	}
-
-	/**@Test9
-	 * about this method verifyOptionIsSelectedFromDropdown() 
-	 * @param : get the data from Excel file as type Map<String, String> expectedData
-	 * @description : it will select the option as per Excel expected data
-	 * @return : String
-	 * @author : YAKSHA
-	 */
-	public String verifyOptionIsSelectedFromDropdown(Map<String, String> expectedData) throws Exception {
-
-		return null;
-
-	}
-
-	/**@Test10
-	 * about this method verifyRadioButton() 
-	 * @param : null
-	 * @description :
-	 * @return : Boolean
-	 * @author : YAKSHA
-	 */
-	public Boolean verifyRadioButton() throws Exception {
-		return false;
-	}
-
-	/**@Test11
-	 * about this method verifyNotificationPopupMessageIfCheckboxIsSelected() 
-	 * @param : null
-	 * @description : verify the error message using hard assert
-	 * @return : String
-	 * @author : YAKSHA
-	 */
-	public String verifyNotificationPopupMessageIfCheckboxIsSelected() throws Exception {
-		return null;
-	}
-
-	/**@Test12
-	 * about this method performJavaScriptOperation() 
-	 * @param : null
-	 * @description : 
-	 * @return : String
-	 * @author : YAKSHA
-	 */
-	public String performJavaScriptOperation(Map<String, String> expectedData) throws Exception {
-
-		return null;
 	}
 
 }
