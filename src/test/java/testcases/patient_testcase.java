@@ -43,7 +43,7 @@ public class patient_testcase extends AppTestBase
 	@Test(priority = 1, groups = {"sanity"}, description="* Navigate to the URL.\r\n"
 			+ "* Retrieve Title and URL of the current page.\r\n"
 			+ "* Verify Title & URL: Check if the title  & URL matches the expected title.")
-	public void verifyTitleOfTheHomePage() throws Exception {
+	public void verifyTitleAndURLOfTheHomePage() throws Exception {
 		patient_PagesInstance = new patient_Pages(driver);
 		locatorsFactoryInstance = new LocatorsFactory(driver);
 
@@ -126,12 +126,12 @@ public class patient_testcase extends AppTestBase
 			+ "-> Age Textbox\r\n"
 			+ "-> Phone Number Textbox\r\n"
 			+ "Note : read & write the data from the JSON ")
-	public void verifyEnteredDataIsPresentInTextbox() throws Exception {
+	public void verifyTextboxIsPresentAndValidateEnteredValue() throws Exception {
 		patient_PagesInstance = new patient_Pages(driver);
 		locatorsFactoryInstance = new LocatorsFactory(driver);
 		Map<String, String> expectedData = new FileOperations().readExcelPOI(expectedDataFilePath, "patientModule");
 
-		Assert.assertEquals(patient_PagesInstance.verifyTexboxIsPresentAndValidateEnteredValue(expectedData),expectedData.get("firstNameValue"), "" +
+		Assert.assertEquals(patient_PagesInstance.verifyTextboxIsPresentAndValidateEnteredValue(expectedData),expectedData.get("firstNameValue"), "" +
 				"Element is not present in current page" + "Error in Pages Classes, Please check manualy!") ;
 		Assert.assertEquals(locatorsFactoryInstance.verifyValueIsPresentInFirstNameTextbox(),expectedData.get("firstNameValue"), "" +
 				"Element is not present in the current page, Error in locators Classes Please check manually") ;
@@ -140,7 +140,7 @@ public class patient_testcase extends AppTestBase
 	@Test(priority = 7, groups = {"sanity"}, description="On the \"Basic Information\" form of \"Register Patient\" sub module,\r\n"
 			+ "scroll to the buttom of the \"Basic Information\" form.\r\n"
 			+ "Then verify the \"Blood Group\" Dropdown is present or not?")
-	public void scrollToBottomVerifyFieldAndHighlight() throws Exception {
+	public void scrollToBottomAndVerifyFieldIsPresent() throws Exception {
 		patient_PagesInstance = new patient_Pages(driver);
 		locatorsFactoryInstance = new LocatorsFactory(driver);
 
@@ -154,11 +154,11 @@ public class patient_testcase extends AppTestBase
 			+ "of \"Register Patient\" sub module,\r\n"
 			+ "If \"Blood Group\" Dropdown is present\r\n"
 			+ "then highlight the \"Blood Group\" Dropdown")
-	public void highlightTheElement() throws Exception {
+	public void highlightTheBloodGroupElement() throws Exception {
 		patient_PagesInstance = new patient_Pages(driver);
 		locatorsFactoryInstance = new LocatorsFactory(driver);
 
-		Assert.assertTrue(patient_PagesInstance.highlightTheElement(), "" +
+		Assert.assertTrue(patient_PagesInstance.highlightTheBloodGroupElement(), "" +
 		"blood group dropdown is not present" + "Error in Pages Classes, Please check manualy!");
 		Assert.assertTrue(locatorsFactoryInstance.verifyEmailTextboxIsPresent(driver).isDisplayed(), "" +
 		"email textbox is not present" + "Error in locators Classes Please check manually");
