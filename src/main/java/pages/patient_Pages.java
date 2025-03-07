@@ -38,7 +38,6 @@ public class patient_Pages extends StartupPage {
 //	TC-7 & 8 Locators
 	By bloodGroupDropdownByElement = null;
 
-
 	String pageName = this.getClass().getSimpleName();
 	public patient_Pages(WebDriver driver) {
 		super(driver);
@@ -52,7 +51,7 @@ public class patient_Pages extends StartupPage {
 	 * @author : YAKSHA
 	 */
 	public boolean loginToHealthAppByGivenValidCredetial(Map<String, String> expectedData) throws Exception {
-		
+		//write your logic here
 		return false;
 	}
 
@@ -64,7 +63,8 @@ public class patient_Pages extends StartupPage {
 	 * @author : YAKSHA
 	 */
 	public String verifyTitleOfThePage() throws Exception {
-		return null;
+		//write your logic here
+				return null;
 	}
 
 	/**@Test1.3
@@ -75,46 +75,44 @@ public class patient_Pages extends StartupPage {
 	 * @author : YAKSHA
 	 */
 	public String verifyURLOfThePage() throws Exception {
+		//write your logic here
 		return null;
 	}
 
 	/**@Test2
 	 * about this method verifyAllPresenceOfFieldIfPatientModuleIsPresent() 
 	 * @param : null
-	 * @description : "Verify that Patient module is present or not ?"
+	 * @description : 
 	 * @return : Boolean
 	 * @author : YAKSHA
 	 */
 	public Boolean verifyAllPresenceOfFieldIfPatientModuleIsPresent() throws Exception {
-		return false;
+		//write your logic here
+				return false;
 	}
 
 	/**@Test3
 	 * about this method verifyPlaceholderNameOfTexbox() 
 	 * @param : null
-	 * @description : "On the "Patient" Module's "Search Patient" page
-	 * verify & clicking on the "Search (Minimum 3 Character)" textbox.
-	 * "and get the Placeholder name of "Search (Minimum 3 Character)" textbox. 
+	 * @description : verify the placeholder name of text box 
 	 * @return : String
 	 * @author : YAKSHA
 	 */
 	public String verifyPlaceholderNameOfTexbox() throws Exception {
+		//write your logic here
 		return null;
 	}
 
 	/**@Test4
 	 * about this method verifyButtonIsPresent() 
 	 * @param : null
-	 * @description :"On the "Patient" Module's"
-			+ "clicking on "Register Patient" sub module"
-			+ "and verify that the "+ New Photo" button is present or not ?"
-			+ "After validation of "+ New Photo" button,"
-			+ "then click on it, Then verify \"Take A Snapshot\" button is present or not?") 
+	 * @description : 
 	 * @return : Boolean
 	 * @author : YAKSHA
 	 */
 	public Boolean verifyButtonIsPresent() throws Exception {
-		return false;
+		//write your logic here
+				return false;
 	}
 
 	/**@Test5
@@ -125,6 +123,7 @@ public class patient_Pages extends StartupPage {
 	 * @author : YAKSHA
 	 */
 	public String verifyErrorMessage() throws Exception {
+		//write your logic here
 		return null;
 	}
 
@@ -136,36 +135,34 @@ public class patient_Pages extends StartupPage {
 	 * @return : String
 	 * @author : YAKSHA
 	 */
-	public String verifyTexboxIsPresentAndValidateEnteredValue(Map<String, String> expectedData) throws Exception {
+	public String verifyTextboxIsPresentAndValidateEnteredValue(Map<String, String> expectedData) throws Exception {
 
+		//write your logic here
 		return null;
 	}
 
 	/**@Test7
 	 * about this method scrollToBottomAndVerifyFieldIsPresent() 
 	 * @param : null
-	 * @description : "On the \"Basic Information\" form of \"Register Patient\" sub module, 
-	 * "scroll to the bottom of the \"Basic Information\" form.
-	 * Then verify the \"Blood Group\" Dropdown is present or not?"
+	 * @description : 
 	 * @return : String
 	 * @author : YAKSHA
 	 */
 	public Boolean scrollToBottomAndVerifyFieldIsPresent() throws Exception {
-		return false;
+		//write your logic here
+				return false;
 	}
 
 	/**@Test8
 	 * about this method scrollToBottomVerifyFieldAndHighlight() 
 	 * @param : null
-	 * @description : "On the bottom of the \"Basic Information" form
-			+ "of "Register Patient" sub module,"
-			+ "If "Blood Group" Dropdown is present"
-			+ "then highlight the "Blood Group" Dropdown"
+	 * @description : 
 	 * @return : Boolean
 	 * @author : YAKSHA
 	 */
-	public Boolean highlightTheElement() throws Exception {
-		return false;
+	public Boolean highlightTheBloodGroupElement() throws Exception {
+		//write your logic here
+				return false;
 	}
 
 }
