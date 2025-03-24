@@ -35,8 +35,7 @@ public class patient_Pages extends StartupPage {
 	By lastNameTextboxByElement = null;
 	By ageTextboxByElement = null;
 	By phoneTextboxByElement = null;
-//	TC-7 & 8 Locators
-	By bloodGroupDropdownByElement = null;
+
 
 	String pageName = this.getClass().getSimpleName();
 	public patient_Pages(WebDriver driver) {
@@ -82,7 +81,7 @@ public class patient_Pages extends StartupPage {
 	/**@Test2
 	 * about this method verifyAllPresenceOfFieldIfPatientModuleIsPresent() 
 	 * @param : null
-	 * @description : 
+	 * @description : Ensure the sub-modules "Search Patient" and "Register Patient" are available. 
 	 * @return : Boolean
 	 * @author : YAKSHA
 	 */
@@ -94,7 +93,7 @@ public class patient_Pages extends StartupPage {
 	/**@Test3
 	 * about this method verifyPlaceholderNameOfTexbox() 
 	 * @param : null
-	 * @description : verify the placeholder name of text box 
+	 * @description : Ensure that the Search text box correctly displays its placeholder text
 	 * @return : String
 	 * @author : YAKSHA
 	 */
@@ -106,11 +105,11 @@ public class patient_Pages extends StartupPage {
 	/**@Test4
 	 * about this method verifyButtonIsPresent() 
 	 * @param : null
-	 * @description : 
+	 * @description : Ensure the presence of the "Take a Snapshot" button.
 	 * @return : Boolean
 	 * @author : YAKSHA
 	 */
-	public Boolean verifyButtonIsPresent() throws Exception {
+	public Boolean verifyTakeASnapshotButtonIsPresent() throws Exception {
 		//write your logic here
 				return false;
 	}
@@ -118,7 +117,7 @@ public class patient_Pages extends StartupPage {
 	/**@Test5
 	 * about this method verifyErrorMessage() 
 	 * @param : null
-	 * @description : verify the error message
+	 * @description : Ensure the error message for the "Phone number" field is "Primary Phone is required",
 	 * @return : String
 	 * @author : YAKSHA
 	 */
@@ -139,30 +138,6 @@ public class patient_Pages extends StartupPage {
 
 		//write your logic here
 		return null;
-	}
-
-	/**@Test7
-	 * about this method scrollToBottomAndVerifyFieldIsPresent() 
-	 * @param : null
-	 * @description : 
-	 * @return : String
-	 * @author : YAKSHA
-	 */
-	public Boolean scrollToBottomAndVerifyFieldIsPresent() throws Exception {
-		//write your logic here
-				return false;
-	}
-
-	/**@Test8
-	 * about this method scrollToBottomVerifyFieldAndHighlight() 
-	 * @param : null
-	 * @description : 
-	 * @return : Boolean
-	 * @author : YAKSHA
-	 */
-	public Boolean highlightTheBloodGroupElement() throws Exception {
-		//write your logic here
-				return false;
 	}
 
 }
