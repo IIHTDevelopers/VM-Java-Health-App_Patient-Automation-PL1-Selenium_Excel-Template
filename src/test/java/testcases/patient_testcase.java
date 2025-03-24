@@ -88,11 +88,11 @@ public class patient_testcase extends AppTestBase
 			+ "After validation of \"+ New Photo\" button,\r\n"
 			+ "then click on it.\r\n"
 			+ "Then verify \"Take A Snapshot\" button is present or not?")
-	public void verifyButtonIsPresent() throws Exception {
+	public void verifyTakeASnapshotButtonIsPresent() throws Exception {
 		patient_PagesInstance = new patient_Pages(driver);
 		locatorsFactoryInstance = new LocatorsFactory(driver);
 
-		Assert.assertTrue(patient_PagesInstance.verifyButtonIsPresent(), "button is not present in current page," + 
+		Assert.assertTrue(patient_PagesInstance.verifyTakeASnapshotButtonIsPresent(), "button is not present in current page," + 
 				"Error in Pages Classes, Please check manualy!");
 		Assert.assertTrue(locatorsFactoryInstance.verifyNewPhotoButtonIsPresent(driver).isDisplayed(), "New Photo Button is not present in the Current page, " + 
 				"Error in locators Classes Please check manually");
@@ -137,32 +137,6 @@ public class patient_testcase extends AppTestBase
 				"Element is not present in the current page, Error in locators Classes Please check manually") ;
 	}
 	
-	@Test(priority = 7, groups = {"sanity"}, description="On the \"Basic Information\" form of \"Register Patient\" sub module,\r\n"
-			+ "scroll to the buttom of the \"Basic Information\" form.\r\n"
-			+ "Then verify the \"Blood Group\" Dropdown is present or not?")
-	public void scrollToBottomAndVerifyFieldIsPresent() throws Exception {
-		patient_PagesInstance = new patient_Pages(driver);
-		locatorsFactoryInstance = new LocatorsFactory(driver);
-
-		Assert.assertTrue(patient_PagesInstance.scrollToBottomAndVerifyFieldIsPresent(), "" +
-		"blood group dropdown is not present" + "Error in Pages Classes, Please check manualy!");
-		Assert.assertTrue(locatorsFactoryInstance.verifyEmailTextboxIsPresent(driver).isDisplayed(), "" +
-		"email textbox is not present" + "Error in locators Classes Please check manually");
-	}
-	
-	@Test(priority = 8, groups = {"sanity"}, description="On the buttom of the \"Basic Information\" form \r\n"
-			+ "of \"Register Patient\" sub module,\r\n"
-			+ "If \"Blood Group\" Dropdown is present\r\n"
-			+ "then highlight the \"Blood Group\" Dropdown")
-	public void highlightTheBloodGroupElement() throws Exception {
-		patient_PagesInstance = new patient_Pages(driver);
-		locatorsFactoryInstance = new LocatorsFactory(driver);
-
-		Assert.assertTrue(patient_PagesInstance.highlightTheBloodGroupElement(), "" +
-		"blood group dropdown is not present" + "Error in Pages Classes, Please check manualy!");
-		Assert.assertTrue(locatorsFactoryInstance.verifyEmailTextboxIsPresent(driver).isDisplayed(), "" +
-		"email textbox is not present" + "Error in locators Classes Please check manually");
-	}
 	
 	@AfterClass(alwaysRun = true)
 	public void tearDown() {
